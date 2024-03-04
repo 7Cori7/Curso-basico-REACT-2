@@ -23,7 +23,6 @@ export default function ColorGenerator(){
     function randomColorUtility(length){
         //Esta función genera un número random según el largo indicado
         return Math.floor(Math.random() * length);
-
     };
 
     function handleRandomHexColor(){

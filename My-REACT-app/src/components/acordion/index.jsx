@@ -54,6 +54,8 @@ export default function Accordion(){
 
         <div className="wrapper">
 
+            <h3>Accordion Selector</h3>
+
             <button style={{backgroundColor: color}} onClick={enableMultiSelect}>Enable/Disable Multi Selection</button>
 
             <div className="acordion">
