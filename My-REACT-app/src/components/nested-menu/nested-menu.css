@@ -1,0 +1,24 @@
+.tree-view-container{
+    min-height: 100vh;
+    width: 350px;
+    background-color: rgb(42, 86, 168);
+    color: white;
+}
+
+.tree-view-container ul:first-child{
+    padding-top: 60px;
+}
+
+.tree-view-container ul:last-child{
+    padding-bottom: 20px;
+}
+
+.menu-list-container{
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.menu-item span{
+    cursor: pointer;
+}
