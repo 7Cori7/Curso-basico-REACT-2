@@ -5,6 +5,7 @@ import ImageSlider from './components/image-slider';
 import LoadMoreData from './components/load-more-data';
 import NestedMenu from './components/nested-menu';
 import menus from './components/nested-menu/data.js';
+import CitasVet from './components/citasVet/index.jsx';
 
 function App() {
   return (
@@ -39,6 +40,11 @@ function App() {
         <h2 style={{textAlign: 'center'}}>Tree View / Menu UI / Recursive Navigation Menu</h2>
         <NestedMenu menus={menus} />
       </div>
+
+      
+        {/*Componente de reservación de citas veterinarias*/}
+        <CitasVet />
+      
     </>
   );
 };
