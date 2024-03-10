@@ -6,6 +6,8 @@ import LoadMoreData from './components/load-more-data';
 import NestedMenu from './components/nested-menu';
 import menus from './components/nested-menu/data.js';
 import CitasVet from './components/citasVet/index.jsx';
+import QrCodeGenerator from './components/qr-code-generator/index.jsx';
+import LightDarkMode from './components/light-dark-mode/index.jsx';
 
 function App() {
   return (
@@ -41,10 +43,19 @@ function App() {
         <NestedMenu menus={menus} />
       </div>
 
-      
+      <div>
         {/*Componente de reservación de citas veterinarias*/}
         <CitasVet />
-      
+      </div>
+        
+      <div className='App'>
+        <QrCodeGenerator />
+      </div>
+
+      <div>
+        {/*Componente de switch de light y dark mode*/}
+        <LightDarkMode />
+      </div>
     </>
   );
 };

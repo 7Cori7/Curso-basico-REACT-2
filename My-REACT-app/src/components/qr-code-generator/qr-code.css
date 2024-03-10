@@ -1,0 +1,22 @@
+.qr-code-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 50px 0;
+    height: 100vh;
+}
+
+.qr-code-container button{
+    cursor: pointer;
+}
+
+.qr-code-container button:disabled{
+    cursor: not-allowed;
+}
+
+.qr-code-container p{
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
