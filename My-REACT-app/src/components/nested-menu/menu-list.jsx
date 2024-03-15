@@ -8,7 +8,7 @@ export default function MenuList({list = []}){
 
             {
                 list && list.length
-                ? list.map(listItem => <MenuItem item={listItem} />)
+                ? list.map((listItem, index) => <MenuItem key={index} item={listItem} />)
                 : null
             }
 

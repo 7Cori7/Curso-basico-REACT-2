@@ -5,9 +5,12 @@ import ImageSlider from './components/image-slider';
 import LoadMoreData from './components/load-more-data';
 import NestedMenu from './components/nested-menu';
 import menus from './components/nested-menu/data.js';
-import CitasVet from './components/citasVet/index.jsx';
-import QrCodeGenerator from './components/qr-code-generator/index.jsx';
-import LightDarkMode from './components/light-dark-mode/index.jsx';
+import CitasVet from './components/citasVet';
+import QrCodeGenerator from './components/qr-code-generator';
+import LightDarkMode from './components/light-dark-mode';
+import ScrollIndicator from './components/scroll-indicator';
+import TabsTest from './components/custom-tabs/tab-test.jsx';
+import ModalTest from './components/modal-popup/modal-test.jsx';
 
 function App() {
   return (
@@ -45,16 +48,32 @@ function App() {
 
       <div>
         {/*Componente de reservación de citas veterinarias*/}
-        <CitasVet />
+        {/* <CitasVet /> */}
       </div>
         
       <div className='App'>
+        {/* <QrCodeGenerator /> */}
         <QrCodeGenerator />
       </div>
 
       <div>
         {/*Componente de switch de light y dark mode*/}
         <LightDarkMode />
+      </div>
+
+      <div>
+        {/*Componente de indicador de scrolling*/}
+        <ScrollIndicator url={'https://dummyjson.com/products?limit=10'} />
+      </div>
+
+      <div>
+        {/*Componente de tabs*/}
+        <TabsTest />
+      </div>
+
+      <div>
+        {/*Componente de Modal Custom*/}
+        <ModalTest />
       </div>
     </>
   );
