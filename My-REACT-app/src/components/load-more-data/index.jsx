@@ -20,7 +20,7 @@ export default function LoadMoreData({limit = '20'}){
         }else{
             setDisableBtn(false);
         }
-
+        
     },[products]);
 
     async function fetchProducts(){
@@ -38,7 +38,6 @@ export default function LoadMoreData({limit = '20'}){
 
                 setProducts((prevData) => [...prevData, ...data.products]);//! <---No funciona bien...siempre repite el primer lote
                 setLoading(l => l = false);
-
             };
 
         }catch(error){
@@ -56,8 +55,6 @@ export default function LoadMoreData({limit = '20'}){
     if(errorMsg !== null){
         return <div><p>An Error Occurred ! ❌ {errorMsg}</p></div>
     }
-
-
 
     return(
         <div className="load-more-container">

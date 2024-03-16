@@ -11,6 +11,7 @@ import LightDarkMode from './components/light-dark-mode';
 import ScrollIndicator from './components/scroll-indicator';
 import TabsTest from './components/custom-tabs/tab-test.jsx';
 import ModalTest from './components/modal-popup/modal-test.jsx';
+import GithubProfileFinder from './components/github-profile-finder';
 
 function App() {
   return (
@@ -37,7 +38,7 @@ function App() {
 
       <div className='App'>
         {/* Compomente para cargar más data*/}
-        <LoadMoreData limit={'10'} />
+        {/* <LoadMoreData limit={'10'} /> */}
       </div>
 
       <div>
@@ -74,6 +75,10 @@ function App() {
       <div>
         {/*Componente de Modal Custom*/}
         <ModalTest />
+      </div>
+
+      <div>
+        <GithubProfileFinder />
       </div>
     </>
   );
