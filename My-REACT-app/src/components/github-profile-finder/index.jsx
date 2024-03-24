@@ -16,7 +16,7 @@ export default function GithubProfileFinder(){
             const res = await fetch(`http://api.github.com/users/${username}`);
             const data = await res.json();
 
-            console.log(data)
+            ////console.log(data)
 
             if(data){
 
