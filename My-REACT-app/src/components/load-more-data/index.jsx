@@ -36,7 +36,7 @@ export default function LoadMoreData({limit = '20'}){
 
             if(data && data.products && data.products.length){
 
-                setProducts((prevData) => [...prevData, ...data.products]);//! <---No funciona bien...siempre repite el primer lote
+                setProducts((prevData) => [...prevData, ...data.products]);
                 setLoading(l => l = false);
             };
 

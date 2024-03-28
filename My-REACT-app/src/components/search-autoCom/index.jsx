@@ -37,7 +37,7 @@ export default function SearchAutoCom(){
 
     function handleClick(e){
 
-        console.log(e.target.innerText)
+        ////console.log(e.target.innerText)
         setShowDropDown(false);
         setSearchParam(s=>s=e.target.innerText);
         setFilteredUsers([]);
@@ -66,8 +66,6 @@ export default function SearchAutoCom(){
     useEffect(()=>{
         fetchUsers();
     }, []);
-
-    console.log(users)
 
     return <div className="serach-ac-container">
 

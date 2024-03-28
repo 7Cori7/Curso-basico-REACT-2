@@ -1,0 +1,50 @@
+.tictactoe-body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.tictactoe-container::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.square{
+    border: 1px solid coral;
+    float: left;
+    font-size: 40px;
+    height: 100px;
+    width: 100px;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+    margin-right: -1px;
+    margin-top: -1px;
+    transition: all ease .5s;
+}
+
+.square:hover{
+    background-color: grey;
+}
+
+.restart-btn{
+    cursor: pointer;
+    padding: 10px 30px;
+    text-transform: capitalize;
+    background-color: coral;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: all ease .5s;
+}
+
+.restart-btn:hover{
+    background-color: yellow;
+    color: inherit;
+}

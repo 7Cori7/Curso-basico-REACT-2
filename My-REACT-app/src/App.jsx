@@ -5,7 +5,6 @@ import ImageSlider from './components/image-slider';
 import LoadMoreData from './components/load-more-data';
 import NestedMenu from './components/nested-menu';
 import menus from './components/nested-menu/data.js';
-import CitasVet from './components/citasVet';
 import QrCodeGenerator from './components/qr-code-generator';
 import LightDarkMode from './components/light-dark-mode';
 import ScrollIndicator from './components/scroll-indicator';
@@ -13,6 +12,7 @@ import TabsTest from './components/custom-tabs/tab-test.jsx';
 import ModalTest from './components/modal-popup/modal-test.jsx';
 import GithubProfileFinder from './components/github-profile-finder';
 import SearchAutoCom from './components/search-autoCom/index.jsx';
+import TicTacToe from './components/tic-tac-toe/tictactoe.jsx';
 
 function App() {
   return (
@@ -39,18 +39,13 @@ function App() {
 
       <div className='App'>
         {/* Compomente para cargar más data*/}
-        {/* <LoadMoreData limit={'10'} /> */}
+        <LoadMoreData limit={'10'} />
       </div>
 
       <div>
         {/*Componente de Menú anidado*/}
         <h2 style={{textAlign: 'center'}}>Tree View / Menu UI / Recursive Navigation Menu</h2>
         <NestedMenu menus={menus} />
-      </div>
-
-      <div>
-        {/*Componente de reservación de citas veterinarias*/}
-        {/* <CitasVet /> */}
       </div>
         
       <div className='App'>
@@ -86,6 +81,11 @@ function App() {
       <div>
         {/*Componente de buscador de usuarios*/}
         <SearchAutoCom />
+      </div>
+
+      <div>
+        {/*Componente de juego Tic Tac Toe*/}
+        <TicTacToe />
       </div>
     </>
   );
