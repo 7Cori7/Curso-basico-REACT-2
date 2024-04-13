@@ -85,8 +85,7 @@ export default function TicTacToe(){
         }
 
     }, [squares, xTurn]);
-   
-    console.log(squares)
+
     return <div className="tictactoe-body">
 
         <h1>Tic Tac Toe</h1>

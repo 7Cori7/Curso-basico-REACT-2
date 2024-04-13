@@ -13,6 +13,10 @@ import ModalTest from './components/modal-popup/modal-test.jsx';
 import GithubProfileFinder from './components/github-profile-finder';
 import SearchAutoCom from './components/search-autoCom/index.jsx';
 import TicTacToe from './components/tic-tac-toe/tictactoe.jsx';
+import FeatureFlags from './components/feature-flag/index.jsx';
+import FeatureFlagGlobalState from './components/feature-flag/context/index.jsx';
+import UseFetchTest from './components/use-fetch/test.jsx';
+import ColorGrad from './components/colorGrad/index.jsx';
 
 function App() {
   return (
@@ -86,6 +90,22 @@ function App() {
       <div>
         {/*Componente de juego Tic Tac Toe*/}
         <TicTacToe />
+      </div>
+
+      <div>
+        {/* Implementación de Feature Flag */}
+        {/* <FeatureFlagGlobalState>
+          <FeatureFlags />
+        </FeatureFlagGlobalState>  */}
+      </div>
+
+      <div>
+        {/* useFetch - Custom Hook */}
+        <UseFetchTest />
+      </div>
+      <div>
+        {/* Componente de graduador de color */}
+        <ColorGrad />
       </div>
     </>
   );
