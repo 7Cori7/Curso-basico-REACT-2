@@ -1,0 +1,18 @@
+.click-outside_container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.click-outside_modal{
+    border: solid 2px black;
+    text-align: center;
+    padding: 20px 40px;
+    font-family: sans-serif;
+    z-index: 10;
+    border-radius: 10px;
+    background-color: white;
+    cursor: default;
+}

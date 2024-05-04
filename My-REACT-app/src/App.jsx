@@ -17,6 +17,8 @@ import FeatureFlags from './components/feature-flag/index.jsx';
 import FeatureFlagGlobalState from './components/feature-flag/context/index.jsx';
 import UseFetchTest from './components/use-fetch/test.jsx';
 import ColorGrad from './components/colorGrad/index.jsx';
+import ClickOutsideTest from './components/use-outside-click/test.jsx';
+import TestUseWindowResize from './components/use-window-resize/test.jsx';
 
 function App() {
   return (
@@ -106,6 +108,14 @@ function App() {
       <div>
         {/* Componente de graduador de color */}
         <ColorGrad />
+      </div>
+      <div>
+        {/* Componente para testear custom hook para cerrar modal clickando fuera */}
+        <ClickOutsideTest />
+      </div>
+      <div className='App'>
+        {/* Componente para testear custom hook para window resize */}
+        <TestUseWindowResize />
       </div>
     </>
   );
