@@ -19,6 +19,8 @@ import UseFetchTest from './components/use-fetch/test.jsx';
 import ColorGrad from './components/colorGrad/index.jsx';
 import ClickOutsideTest from './components/use-outside-click/test.jsx';
 import TestUseWindowResize from './components/use-window-resize/test.jsx';
+import ScrollTopBottom from './components/scroll-top-bottom/index.jsx';
+import ScrollToSection from './components/scroll-top-bottom/scroll-to-section.jsx';
 
 function App() {
   return (
@@ -116,6 +118,14 @@ function App() {
       <div className='App'>
         {/* Componente para testear custom hook para window resize */}
         <TestUseWindowResize />
+      </div>
+      <div className='App'>
+        {/* Componente de feature para hacer scroll al top o al bottom */}
+        <ScrollTopBottom />
+      </div>
+      <div>
+        {/* Componente de feature para hacer scroll a una sección de la página */}
+        <ScrollToSection />
       </div>
     </>
   );
