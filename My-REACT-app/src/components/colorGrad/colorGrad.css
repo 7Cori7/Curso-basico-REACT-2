@@ -17,14 +17,26 @@
 
 .range{
     display: flex;
-    cursor: pointer;
     width: 100%;
+    position: relative;
+}
+
+.range input{
+    width: 200px;
+    height: 3px;
+    border-radius: 5px;
+    background: #ddd;
+    appearance: none;
+    margin-top: 24px;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 .color-grad-content{
     display: flex;
     align-items: baseline;
-    gap: 30px;
+    gap: 80px;
     width: 100%;
     justify-content: space-between;
 }
@@ -32,4 +44,10 @@
 .controls{
     display: flex;
     gap: 10px;
+    position: relative;
+}
+
+.controls .range-value{
+    position: absolute;
+    left: -15%;
 }
